@@ -20,3 +20,12 @@ $ docker-compose run --rm npm install
 # Compile project fronted assets
 $ docker-compose run --rm npm run dev|prod
 ```
+## artisan
+Rince and repeat like the previous standalone containerscontainers
+```shell
+# The generic list of artisan commands
+$ docker-compose run --rm artisan
+
+# Run default migrations for the app
+$ docker-compose run --rm artisan migrate
+```
