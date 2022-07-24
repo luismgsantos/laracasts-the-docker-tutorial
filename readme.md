@@ -1,3 +1,15 @@
+## Running the nginx container
+```shell
+$ docker-compose up nginx
+# Run in detached mode so you can use the same terminal window
+$ docker-compose up -d nginx 
+
+# Run container specifying the file
+$ docker-compose -f docker-compose.yml up --build nginx 
+
+# Run container using the prod config to overwrite defaults
+$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build nginx
+```
 ## Composer
 ### Creating the project
 ```shell
@@ -18,7 +30,7 @@ The same thing as above, but now using the npm service/container
 $ docker-compose run --rm npm install
 
 # Compile project fronted assets
-$ docker-compose run --rm npm run dev|prod
+$ docker-compose run --rm npm run dev # dev | prod depending on desirable outcome
 ```
 ## artisan
 Rince and repeat like the previous standalone containers
