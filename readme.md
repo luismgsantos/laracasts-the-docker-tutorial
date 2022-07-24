@@ -28,4 +28,10 @@ $ docker-compose run --rm artisan
 
 # Run default migrations for the app
 $ docker-compose run --rm artisan migrate
+
+# Gernerate Post (model) and migration file
+$ docker-compose run --rm artisan make:model Post --migration
+
+# Open up tinker
+$ docker-compose run --rm artisan tinker
 ```
