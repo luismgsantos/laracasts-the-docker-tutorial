@@ -47,3 +47,8 @@ $ docker-compose run --rm artisan make:model Post --migration
 # Open up tinker
 $ docker-compose run --rm artisan tinker
 ```
+
+Used tool 'mkcert' to create certificates
+```shell
+$ mkcert laravel-docker.test
+```
