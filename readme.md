@@ -10,7 +10,7 @@ $ docker-compose -f docker-compose.yml up --build nginx
 # Run container using the prod config to overwrite defaults
 $ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build nginx
 ```
-## Composer
+## composer
 ### Creating the project
 ```shell
 $ docker-compose run --rm composer create-project laravel/laravel .
